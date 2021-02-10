@@ -1,0 +1,65 @@
+
+
+                <hr>
+
+                <div class="hot_products_header">
+                    Hot products
+                </div>
+                <div class="hot_products">
+                    <div class="hot_product">
+                        <img src="https://image.flaticon.com/icons/png/512/61/61045.png">
+                        Product #1
+                    </div>
+                    <div class="hot_product">
+                        <img src="https://image.flaticon.com/icons/png/512/61/61045.png">
+                        Product #1
+                    </div>
+                    <div class="hot_product">
+                        <img src="https://image.flaticon.com/icons/png/512/61/61045.png">
+                        Product #1
+                    </div>
+                    <div class="hot_product">
+                        <img src="https://image.flaticon.com/icons/png/512/61/61045.png">
+                        Product #1
+                    </div>
+                </div>
+
+
+.hot_products_header {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+    box-sizing: border-box;
+    border-radius: 5px
+}
+
+.hot_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: rgba(0, 0, 0, 0) 5px solid;
+}
+
+.hot_product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 24%;
+    border: 5px black solid;
+    border-radius: 5%;
+
+    font-size: x-large;
+}
+
+.hot_product img {
+    padding: 5%;
+    box-sizing: border-box;
+}

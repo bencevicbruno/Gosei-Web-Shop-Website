@@ -1,0 +1,128 @@
+/* General */
+
+:root{ scrollbar-width: none !important } 
+
+body {
+    margin: 0%;
+    padding: 0%;
+
+    background-color: rgb(245, 245, 245);
+}
+
+/* Navigation header*/
+
+nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to top, rgb(220, 220, 220), rgb(255, 255, 255));
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+nav aside {
+    width: 10%;
+}
+
+nav main {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;    
+}
+
+/* Navigation header elements */
+
+nav main div {
+    width: 25%;
+}
+
+nav main div:hover {
+    background-image: linear-gradient(to top, rgb(190, 190, 190) 8%, rgb(220, 220, 220) 8%,rgb(255, 255, 255));
+}
+
+nav main div:not(.dropdown):not(.dropdown_content) {
+    /* center in the middle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav main .logo {
+    height: 100%;
+}
+
+nav main .logo img {
+    width: 80%;
+}
+
+nav main div img:hover {
+    cursor: pointer;
+}
+
+nav main div a {
+    width: 100%;
+    color: #001B2E;
+    font-weight: 500;
+    font-size: min(5vh, 2.5vw);
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo_index {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_name {
+    width: 100%;
+    height: 100%;
+
+     /* center in the middle */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.dropdown_content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(230, 230, 230), rgb(255, 255, 255));
+}
+
+.dropdown_content a:hover {
+    background-image: linear-gradient(to top, rgb(190, 190, 190) 8%, rgb(220, 220, 220) 8%,rgb(255, 255, 255));
+}
+
+.dropdown:hover .dropdown_content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sticky navigation bar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* FOR FUTURE ME: the .content tag should match the main body tag
+    since now the header is on top of the screen, so after scrolling back to the tap your screen you should add the padding
+    on the top so it doesnt hover over content*/
+.sticky + article {
+    padding-top: 10vh;
+}

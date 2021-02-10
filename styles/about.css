@@ -1,0 +1,65 @@
+article {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 3vh;
+    
+    color: #001B2E;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+article aside {
+    width: 15%;
+}
+
+article section {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(235, 235, 235);
+}
+
+/* Project */
+
+#project {
+    margin: 1vh;
+    background-color: rgb(225, 225, 225);
+    border-radius: 1vh;
+
+    padding: 1vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#project img {
+    width: 40%;
+}
+
+#project div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 3vh;
+}
+
+/* Tools */
+
+#tools {
+    height: 10vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 1vh;
+}
+
+#tools img {
+    height: auto;
+}
