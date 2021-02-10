@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+        <title>Gosei Webshop - About</title>
+
+        <link rel="stylesheet" href="styles/navigation_header.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/footer.css">
+    </head>
+
+    <body>
+        <nav id="navigation_header">
+            <aside></aside>
+    
+            <main>
+                <div class="logo">
+                    <a class="logo_index" href="index.html"><img src="images/logo_transparent.png"></a>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown_name">
+                        <a href="products.html">Products</a>
+                    </div>                    
+                    <div class="dropdown_content">
+                        <a href="products.html#smart_watches">Smart watches</a>
+                        <a href="products.html#vacuum_cleaners">Vacuum cleaners</a>
+                        <a href="products.html#sensors">Sensors</a>
+                        <a href="products.html#cameras">Cameras</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div>
+                    <a href="about.html">About</a>
+                </div>
+            </main>
+    
+            <aside></aside>
+            <script src="scripts/sticky_navigation_bar.js"></script>
+        </nav>
+
+        <article>
+            <aside></aside>
+
+            <section>
+                <div id="project">
+                    <img src="images/logo_circle.png">
+                    <div>
+                        This webpage was created as the final project for my mandatory course "The Basics of Web and Android Applications Development".
+                        As usual, every page uses HTML for the structure of the page and CSS to stylize it. Javascript was used to make the navigation
+                        bar stick on top of all content on every page. The 'Product' page heavily relies on Javascript as it uses a URL parameter
+                        to download product data and fit it on screen, as well as show the loading icon and notify the end user should an error fetching
+                        product data occur. 
+                    </div>
+                </div>
+                <div id="tools">
+                    <img src="images/html.png">
+                    <img src="images/css.png">
+                    <img src="images/javascript.png">
+                </div>
+            </section>
+
+            <aside></aside>
+            <script src="scripts/product_page_setup.js"></script>
+        </article>
+
+        <footer>
+            <aside></aside>
+            
+            <main>
+                <div class="footer_card social_media">
+                    <a href="https://www.facebook.com">
+                        <img src="images/facebook.png">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="images/twitter.png">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="images/instagram.png">
+                    </a>
+                </div>
+
+                <div class="footer_divider"></div>
+
+                <div class="footer_card rights">
+                    &copy 2021, Gosei<br>
+                    All rights reserved
+                </div>
+
+                <div class="footer_divider"></div>
+
+                <div class="footer_card contact">
+                    <div>E-mail:<br><a href="mailto:">contact@gosei.com</a><br></div>
+                    <div>Phone:<br><a href="tel:+123 45 56 789">+123 45 56 789</a><br></div>
+                    <div>Location:<br><a href="https://goo.gl/maps/xDwaKc6oYUN9WYBK7">Vukovarska ulica 31, 31 000 Osijek</a></div>
+                </div>
+            </main>
+
+            <aside></aside>
+        </footer>
+    </body>
+</html>
